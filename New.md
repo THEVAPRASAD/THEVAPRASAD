@@ -1,38 +1,27 @@
-e<stdio.h>
+#include<stdio.h>
 int main()
 {
 	int n;
-	char ch;
-	printf("Enter the number:");
+	printf("Enter marks:");
 	scanf("%d",&n);
-	switch (n)
-{
-	case(1):
-{
-	printf("Pizza,\nRs 239");
-	break;
-	}	
-	case(2):
+	if(n>=85)
 	{
-	printf("Burger,\nRs 129");
-	break;	
+	printf("Grade A");
+    }
+	else if(n>=70)
+	{printf("Grade B");
 	}
-	case(3):
+	
+	else if(n>=55)
 	{
-	printf("Pasta,\nRs 179");
-	break;	
+	printf("Grade c");
 	}
-	case(4):
+	else if(n>=40)
 	{
-	printf("French Fries,\nRs 99");
-	break;	
+	printf("Grade D");
 	}
-	case(5):
-	{
-	printf("Sandwich,\nRs 149");
-	break;
-	}	
-	default:
-	{printf("Number exceeds the limit");
+	else
+	{printf("Grade F");
 	}
-}}
+	return 0;
+	}
